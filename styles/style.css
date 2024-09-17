@@ -249,21 +249,20 @@ p {
 /* Container for articles with images */
 .article-with-thumbnail {
   display: flex;
-  flex-direction: row; /* Ensure image and content are laid out horizontally */
-  align-items: center; /* Aligns image and content vertically in the center */
+  flex-direction: column; /* Ensure image and content are laid out horizontally */
+  align-items: last baseline ; /* Aligns image and content vertically in the center */
   border: 1px solid gray; /* Gray border around the article container */
-  padding: 15px; /* Padding inside the container */
+  padding: 10px 10px; /* Padding inside the container */
   margin-bottom: 20px; /* Space between articles */
-  position: relative; /* Position relative for internal layout tweaks */
+  position: absolute; /* Position relative for internal layout tweaks */
 }
 
 /* Style for the thumbnail image */
 .article__thumbnail {
-    width: 150px; /* Set the width of the image */
+    width: 100px; /* Set the width of the image */
     height: auto; /* Maintain aspect ratio */
-    margin-right: 10px; /* Space between the image and content */
+    margin-right: 2px; /* Space between the image and content */
     object-fit: contain; /* Ensure the image fits within its container */
-    padding: 10px; /* Add padding to the image */
     flex-shrink: 0; /* Prevent the image from shrinking */
 }
 /* Read more link styling */
